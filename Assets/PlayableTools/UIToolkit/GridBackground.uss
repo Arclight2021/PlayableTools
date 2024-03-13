@@ -1,0 +1,13 @@
+GridBackground{
+
+    --spacing: 15;
+
+    --thick-lines: 10;
+
+    --line-color: #232323;
+
+    --thick-line-color: #B0B0B0;
+
+    --grid-background-color: #383838;
+
+} 

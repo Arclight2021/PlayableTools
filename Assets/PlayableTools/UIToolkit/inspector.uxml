@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/PlayableTools/UIToolkit/uss.uss?fileID=7433441132597879392&amp;guid=c0d7d815b3b6fed43b851316a6b157f3&amp;type=3#uss" />
+    <ui:VisualElement focusable="true" name="playablenodeeditor-inspector-container" style="flex-grow: 1; background-color: rgb(53, 53, 53);">
+        <ui:Label tabindex="-1" text="Inspector" display-tooltip-when-elided="true" name="playablenodeeditor-title" focusable="true" />
+        <ui:ScrollView style="flex-grow: 0.7;">
+            <ui:VisualElement name="playablenodeeditor-managerInspector-container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+        </ui:ScrollView>
+        <ui:ScrollView focusable="true" style="flex-grow: 0.3;">
+            <ui:Label tabindex="-1" text="Editor" display-tooltip-when-elided="true" name="playablenodeeditor-title" focusable="true" />
+            <ui:VisualElement name="playablenodeeditor-inspector-common-container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            <ui:VisualElement name="playablenodeeditor-inspector-container-node-editor" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            <ui:Label tabindex="-1" text="Runtime" display-tooltip-when-elided="true" name="playablenodeeditor-title" focusable="true" class="Label" />
+            <ui:VisualElement name="playablenodeeditor-inspector-container-node-runtime-editor" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            <ui:Label tabindex="-1" text="Detail" display-tooltip-when-elided="true" name="playablenodeeditor-title" focusable="true" />
+            <ui:VisualElement name="playablenodeeditor-inspector-detail" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Label tabindex="-1" text="            VisualTreeAsset inspectorAsset =&#10;                AssetDatabase.LoadAssetAtPath&lt;VisualTreeAsset&gt;(&quot;Assets/PlayableTools/UIToolkitElement/inspector.uxml&quot;);&#10;            var inspector = inspectorAsset.CloneTree();" display-tooltip-when-elided="true" name="playablenodeeditor-inspector-label" style="white-space: normal;" />
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>
